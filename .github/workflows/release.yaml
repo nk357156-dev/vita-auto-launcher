@@ -17,7 +17,8 @@ jobs:
       - name: Install dependencies
         run: |
           vdpm install libvita2d
-          apk add --no-cache pngquant cmake make
+          cmake --version
+          make --version
 
       - name: Build
         run: cmake -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build -j4
