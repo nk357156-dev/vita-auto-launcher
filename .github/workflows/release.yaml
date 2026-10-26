@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          vdpm install vita2d
+          vdpm install libvita2d
           apk add --no-cache pngquant cmake make
 
       - name: Build
